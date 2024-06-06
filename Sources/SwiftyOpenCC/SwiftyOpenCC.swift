@@ -1,7 +1,7 @@
 //
 //  SwiftyOpenCC.swift
 //
-//  Created by Eden on 2024/6/5.
+//  Created by Darktt on 2024/6/5.
 //
 
 import JavaScriptCore
@@ -73,8 +73,8 @@ class OpenCC
         self.converterFunction = converter
     }
     
-    func converter(_ source: String, from: String, to: String) -> String
+    func converter(_ source: String, from: Language, to: Language) -> String
     {
-        self.converterFunction(source, from, to).toString()
+        self.converterFunction(source, from.rawValue, to.rawValue).toString()
     }
 }

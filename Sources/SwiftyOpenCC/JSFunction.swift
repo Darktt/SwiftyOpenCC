@@ -7,7 +7,7 @@
 
 import JavaScriptCore
 
-public
+internal
 extension JSContext
 {
     func function(via name: String) -> JSFunction
@@ -19,7 +19,7 @@ extension JSContext
     }
 }
 
-public
+internal
 struct JSFunction
 {
     fileprivate

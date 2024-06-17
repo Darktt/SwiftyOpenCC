@@ -7,7 +7,7 @@
 
 import JavaScriptCore
 
-public
+internal
 extension JSContext
 {
     subscript<Key>(_ key: Key) -> JSValue where Key: (NSCopying & NSObjectProtocol)
